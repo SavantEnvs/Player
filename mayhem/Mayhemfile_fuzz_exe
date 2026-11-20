@@ -1,0 +1,9 @@
+project: savantenvs/Player
+target: fuzz_exe
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_exe/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_exe
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,5 @@
+# Build context for mayhem/Dockerfile: the full repo incl. .git; only local build trees are pruned.
+mayhem/build-fuzz/
+mayhem/build-tests/
+/fuzz_*
+/ctrf-report.json
